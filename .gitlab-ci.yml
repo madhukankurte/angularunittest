@@ -1,5 +1,6 @@
 stages:
   - build
+  - buildreport
   - test
   - prodbuild
   - dockerpush
@@ -21,7 +22,30 @@ build:
   script:
     - npm install
     
-
+test_ci_push:
+  tags:
+    - linux
+    - shell
+    - light
+  stage: buildreport
+  allow_failure: false
+  only:
+    - master
+  script:
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.mycompany.home/developers/benchmarks.git &> /dev/null
+    - cd angularunittest
+    - echo "This is a test" > test.dat
+    - git config --global user.name "${GITLAB_USER_NAME}"
+    - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - git log --pretty=format:%h,%an,%ae,%s > text.csv
+    #- git add --all
+    #- git commit -m "GitLab Runner Push"
+    #- git push http://${YOUR_USERNAME}:${PERSONAL_ACCESS_TOKEN}@gitlab.mycompany.home/developers/benchmarks.git HEAD:master
+    #- cd ..
+  artifacts:
+    paths:
+      - text.csv/
+    
 
 Unittest:
   stage: test
