@@ -23,10 +23,6 @@ build:
     - npm install
     
 test_ci_push:
-  tags:
-    - linux
-    - shell
-    - light
   stage: buildreport
   allow_failure: false
   only:
