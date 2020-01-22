@@ -34,7 +34,7 @@ test_ci_push:
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
     - touch text.csv
-    - git log --pretty=format:%h,%an,%ae,%s > text.csv
+    - git log --pretty=format:%h,%an,%ae,%s
     #- git add --all
     #- git commit -m "GitLab Runner Push"
     #- git push http://${YOUR_USERNAME}:${PERSONAL_ACCESS_TOKEN}@gitlab.mycompany.home/developers/benchmarks.git HEAD:master
