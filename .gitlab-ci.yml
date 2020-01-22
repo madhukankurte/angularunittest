@@ -41,7 +41,8 @@ test_ci_push:
     #- cd ..
   artifacts:
     paths:
-      - ttest.dat
+      - test.dat
+      - text.csv
     
 
 Unittest:
