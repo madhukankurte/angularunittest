@@ -40,7 +40,7 @@ test_ci_push:
     #- cd ..
   artifacts:
     paths:
-      - text.csv/
+      - text.csv
     
 
 Unittest:
