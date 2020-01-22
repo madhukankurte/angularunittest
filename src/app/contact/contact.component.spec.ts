@@ -54,12 +54,12 @@ describe('ContactComponent', () => {
   // }));
 
 
-//  it(`form should be invalid`, async(() => {
-//   component.contactForm.controls['email'].setValue('');
-//   component.contactForm.controls['name'].setValue('');
-//   component.contactForm.controls['text'].setValue('');
-//     expect(component.contactForm.valid).toBeFalsy();
-//   }));
+ it(`form should be invalid`, async(() => {
+  component.contactForm.controls['email'].setValue('');
+  component.contactForm.controls['name'].setValue('');
+  component.contactForm.controls['text'].setValue('');
+    expect(component.contactForm.valid).toBeFalsy();
+  }));
 
 //   it(`form should be valid`, async(() => {
 //     component.contactForm.controls['email'].setValue('asasd@whu.com');
