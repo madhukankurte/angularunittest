@@ -33,6 +33,7 @@ test_ci_push:
     - echo "This is a test" > test.dat
     - git config --global user.name "${GITLAB_USER_NAME}"
     - git config --global user.email "${GITLAB_USER_EMAIL}"
+    - touch text.csv
     - git log --pretty=format:%h,%an,%ae,%s > text.csv
     #- git add --all
     #- git commit -m "GitLab Runner Push"
