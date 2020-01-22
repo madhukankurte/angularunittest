@@ -10,7 +10,6 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage-istanbul-reporter'),
-      require('karma-sonarqube-reporter'),
       require('@angular-devkit/build-angular/plugins/karma')
     ],
     client: {
@@ -39,13 +38,12 @@ module.exports = function (config) {
       }
     },
 
-    reporters: ['progress', 'kjhtml','sonarqube'],
     reporters: ['coverage-istanbul'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome','ChromeHeadless'],
+    browsers: ['ChromeHeadless'],
     singleRun: true,
     restartOnFileChange: true,
 
