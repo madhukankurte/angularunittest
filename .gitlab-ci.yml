@@ -21,6 +21,14 @@ build:
     - apk add --update git && rm -rf /tmp/* /var/cache/apk/*
   script:
     - npm install
+
+changelog:
+  image: docker:git
+  stage: buildreport
+  script:
+    - git log --pretty=format:'At %ci, %cN committed %h - %s' --decorate --graph >log.log
+  artifacts:
+    paths: [log.log]
     
 test_ci_push:
   stage: buildreport
