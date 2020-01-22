@@ -28,7 +28,7 @@ test_ci_push:
   only:
     - master
   script:
-    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.mycompany.home/developers/benchmarks.git &> /dev/null
+    - git clone http://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/madhusudhan2/angularunittest.git &> /dev/null
     - cd angularunittest
     - echo "This is a test" > test.dat
     - git config --global user.name "${GITLAB_USER_NAME}"
