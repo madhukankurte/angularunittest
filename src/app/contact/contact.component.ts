@@ -13,6 +13,7 @@ export class ContactComponent {
       name: '',
       email: '',
       text: ''
+      
   };
   submitted = false;
 
