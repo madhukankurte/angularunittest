@@ -7,9 +7,7 @@
     "build": "ng build",
     "test": "ng test --code-coverage",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "precommit": "npm test",
-    "prepush": "npm test"
+    "e2e": "ng e2e"
   },
   "husky": {
     "hooks": {
