@@ -11,6 +11,11 @@
     "precommit": "npm test",
     "prepush": "npm test"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.9",
