@@ -11,20 +11,23 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "src/**/*.ts": ["ng lint --fix", "git add"]
+    "src/**/*.ts": [
+      "ng lint --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-prepush"
+      "pre-commit": "ng lint"
     }
   },
-   "lint-prepush": {
-        "tasks": {
-          "src/app/contact/contact.component.ts": [
-            "eslint"
-          ]
-        }
-      },
+  "lint-prepush": {
+    "tasks": {
+      "src/app/contact/contact.component.ts": [
+        "eslint"
+      ]
+    }
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.9",
@@ -48,6 +51,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
+    "eslint": "^6.8.0",
     "husky": "^4.2.3",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
