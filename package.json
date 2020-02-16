@@ -11,9 +11,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "./precommit.sh"
+      "pre-commit": "lint-prepush"
     }
   },
+   "lint-prepush": {
+        "tasks": {
+          "*.js": [
+            "eslint"
+          ]
+        }
+      },
   "private": true,
   "dependencies": {
     "@angular/animations": "~8.2.9",
@@ -37,7 +44,7 @@
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "^5.0.0",
-    "husky": "^4.2.1",
+    "husky": "^4.2.3",
     "jasmine-core": "~3.4.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",
@@ -45,6 +52,7 @@
     "karma-coverage-istanbul-reporter": "^2.0.6",
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "lint-prepush": "^1.1.0",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",

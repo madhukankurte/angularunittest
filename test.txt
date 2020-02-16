@@ -2,10 +2,10 @@
 > unit-testing@0.0.0 test /home/madhu/angularunittest
 > ng test --code-coverage
 
-[32m06 02 2020 00:34:43.985:INFO [karma-server]: [39mKarma v4.1.0 server started at http://0.0.0.0:9876/
-[32m06 02 2020 00:34:43.986:INFO [launcher]: [39mLaunching browsers ChromeHeadless with concurrency unlimited
-[32m06 02 2020 00:34:43.995:INFO [launcher]: [39mStarting browser ChromeHeadless
-[32m06 02 2020 00:34:46.834:INFO [HeadlessChrome 80.0.3987 (Linux 0.0.0)]: [39mConnected on socket vQjjMB4oUx60uTGOAAAA with id 82561012
+[32m06 02 2020 02:02:24.489:INFO [karma-server]: [39mKarma v4.1.0 server started at http://0.0.0.0:9876/
+[32m06 02 2020 02:02:24.491:INFO [launcher]: [39mLaunching browsers ChromeHeadless with concurrency unlimited
+[32m06 02 2020 02:02:24.502:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m06 02 2020 02:02:28.623:INFO [HeadlessChrome 80.0.3987 (Linux 0.0.0)]: [39mConnected on socket h25uGqus21g3830OAAAA with id 49395007
 TOTAL: 6 SUCCESS
 
 =============================== Coverage summary ===============================

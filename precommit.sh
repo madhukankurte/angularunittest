@@ -13,7 +13,7 @@ grep ^Statements[[:space:]]*:[[:space:]]*[0-9]*% test.txt > test2.txt
 output="$(cat test2.txt)"
 
 
-if [ $output -gt 1000 ]
+if [ $output -gt 85 ]
 then
 exit 0
 else
