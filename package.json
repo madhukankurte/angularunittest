@@ -9,12 +9,6 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "lint-staged": {
-    "src/**/*.ts": [
-      "ng lint --fix",
-      "git add"
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-prepush"
