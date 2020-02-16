@@ -19,6 +19,7 @@ export class ContactComponent {
 
   constructor() {
       this.createForm();
+      console.log("test");
   }
 
   createForm(): void {
