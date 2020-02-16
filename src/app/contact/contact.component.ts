@@ -23,6 +23,8 @@ export class ContactComponent {
   }
 
   createForm(): void {
+
+    console.log("test");
       this.contactForm = new FormGroup({
           'name': new FormControl(this.contact.name, [
               Validators.required,
