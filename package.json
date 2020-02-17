@@ -8,11 +8,10 @@
     "test": "ng test --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "pretest":"./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
+    "pretest": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
   },
   "husky": {
     "hooks": {
-      
       "pre-commit": "npm run pretest"
     }
   },
