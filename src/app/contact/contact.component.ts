@@ -20,6 +20,7 @@ export class ContactComponent {
   submitted = false;
 
   constructor() {
+    console.log('test');
     this.createForm();
   }
 
