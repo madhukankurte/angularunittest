@@ -7,6 +7,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+
   text = 'contact page1';
   contactForm: FormGroup;
   contact = {
@@ -18,6 +19,7 @@ export class ContactComponent {
   submitted = false;
 
   constructor() {
+    console.log("test");
       this.createForm();
       console.log("test");
   }
