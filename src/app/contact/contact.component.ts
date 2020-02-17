@@ -39,6 +39,7 @@ export class ContactComponent {
   }
 
   onSubmit(): void {
+    
     this.submitted = true;
   }
 }
