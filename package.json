@@ -11,13 +11,24 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-prepush": {
     "tasks": {
       "src/app/contact/contact.component.ts": [
         "eslint"
+      ]
+    }
+  },
+
+  "lint-staged": {
+    "concurrent": false,
+    "linters": {
+      "src/**/*.{js,jsx}": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
       ]
     }
   },
@@ -31,6 +42,7 @@
     "@angular/platform-browser": "~8.2.9",
     "@angular/platform-browser-dynamic": "~8.2.9",
     "@angular/router": "~8.2.9",
+    "babel-eslint": "^10.0.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
